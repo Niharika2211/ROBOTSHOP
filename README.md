@@ -7,23 +7,23 @@ docker network create rb
 ```
 
 ```bash
-docker run --rm -dit --name mongo --network rb siva9666/mongo-instana:monitoring-v1
+docker run --rm -it --name mongo --network rb siva9666/mongo-instana:monitoring-v1
 ```
 
 ```bash
-docker run --rm -dit --name debug --network rb siva9666/debug-utility:v1
+docker run --rm -it --name debug --network rb siva9666/debug-utility:v1
 ```
 
 ```bash
-docker run --rm -dit --name mysql -e MYSQL_ROOT_PASSWORD=RoboShop@1 --network rb siva9666/mysql-instana:v1
+docker run --rm -it --name mysql -e MYSQL_ROOT_PASSWORD=RoboShop@1 --network rb siva9666/mysql-instana:v1
 ```
 
 ```bash
-docker run --rm -dit --name redis --network rb siva9666/redis-instana:v1
+docker run --rm -it --name redis --network rb siva9666/redis-instana:v1
 ```
 
 ```bash
-docker run --rm -dit --name rabbit --network rb siva9666/rabbit-instana:v1
+docker run --rm -it --name rabbit --network rb siva9666/rabbit-instana:v1
 ```
 
 This formatting makes each command easier to read and copy for execution. Let me know if you need any further assistance!
