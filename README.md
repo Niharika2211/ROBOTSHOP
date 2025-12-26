@@ -43,7 +43,7 @@ docker run --rm -dit -e CATALOGUE_HOST=catalogue -e CATALOGUE_PORT=8080 -e REDIS
 
 # shipping
 ```bash
-docker run --rm -dit \
+docker run --rm -it \
   -e DB_HOST="mysql" \
   -e DB_PORT="3306" \
   -e DB_USER="shipping" \
@@ -56,7 +56,7 @@ docker run --rm -dit \
 
 # payment
 ```bash
-docker run --rm -dit --name payment \
+docker run --rm -it --name payment \
     -e CART_HOST="cart" \
     -e CART_PORT=8080 \
     -e USER_HOST="user" \
